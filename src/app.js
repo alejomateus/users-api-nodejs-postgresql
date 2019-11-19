@@ -1,4 +1,4 @@
-import express,{ json} from "express";
+import express, { json } from "express";
 import morgan from "morgan";
 import userRoutes from './routes/users';
 const app = express();
@@ -11,6 +11,5 @@ app.use((req, res, next) => {
 });
 app.use(morgan('dev'));
 app.use(json());
-app.use('/users',userRoutes);
-
+app.use('/users', userRoutes);
 export default app;

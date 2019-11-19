@@ -7,25 +7,20 @@ const User = sequialize.define('users', {
     },
     first_name: {
         type: Sequialize.TEXT
-
     },
     last_name: {
         type: Sequialize.TEXT
-
     },
     email: {
         type: Sequialize.TEXT
-
     },
     tel: {
         type: Sequialize.TEXT
-
     },
     date_of_birth: {
         type: Sequialize.DATE
-
     }
 }, {
-        timestamps: false
-    });
+    timestamps: false
+});
 export default User;
